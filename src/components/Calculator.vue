@@ -73,8 +73,8 @@ import MoneyInput from "./MoneyInput.vue";
 interface Calculation {
   phone: number;
   onetime: number;
-  monthly_first?: number;
-  monthly_second?: number;
+  monthly_first: number;
+  monthly_second: number;
   total: number;
 }
 
@@ -85,6 +85,8 @@ export default defineComponent({
       phone: 0,
       onetime: 0,
       total: 0,
+      monthly_first: 0,
+      monthly_second: 0
     });
 
     return {
